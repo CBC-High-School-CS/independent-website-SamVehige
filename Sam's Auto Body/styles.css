@@ -84,3 +84,19 @@ nav.sitenavigation {
  nav.sitenavigation a:hover, nav.sitenavigationa:focus {
      color: #ffffff;
  }
+
+/* Footer */
+footer {
+    padding: 0.6em;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    /*clear: both; */
+ }
+ footer p {
+    margin: 0.4em;
+    border: 2px solid #ffffff;
+ }
+ .accent {
+    font-weight: bold;
+ }

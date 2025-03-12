@@ -17,7 +17,7 @@ a, article, body, div, footer, header, h1, h2, h3, h4, nav, p {
 
 /* body */
 body {
-    max-width: 850px;
+    max-width: 1000px;
     margin: 0 auto;
     background-color: #676767;
     font-family: Arial, 'Times New Roman';
@@ -31,7 +31,7 @@ body {
 }
 .links p {
     display: inline-block;
-    margin: 0.39em;
+    margin: 1em;
 }
 .links a {
     text-decoration: none;
@@ -45,6 +45,16 @@ h1.Sam_title {
     background-color: #ffffff;
     color: #000000;
     border: 4px solid #000000;
+}
+aside {
+    width: 230px;
+    float: right;
+    padding: 0px 0px 0px 20px;
+}
+aside section img {
+    display: block;
+    padding: 10px;
+    border-bottom: 1 px solid #ffffff;
 }
 
 /* skip navigation link */

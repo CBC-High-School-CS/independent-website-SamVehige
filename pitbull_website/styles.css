@@ -1,0 +1,209 @@
+/* 
+   Pitbull Lover style sheet 
+   Filename: styles.css
+
+   Author:   Phillip Stapleton
+   Date:     Mar. 8, 2025
+*/
+
+ /* reset styles */
+html {
+    font-size: 16px;
+ }
+ a, article, body, div, figcaption, figure, footer, header, h1, h2, h3, img, nav, p, hgroup {
+    border: 0;
+    padding: 0;
+    margin: 0;
+ }
+ img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+ }
+ 
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    /* padding: 0; */
+    padding-top: 120px;
+    background-color: #f8f8f8;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 99%;
+    /* display: flex; */
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 70px;
+    
+}   
+
+#logo {
+    width: 80px;
+    /* Adjust size */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    width: 70vw;
+    height: 60vh;
+}
+
+.panel {
+    background: #000;
+    border-radius: 10px;
+    cursor: pointer;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    transition: flex 0.4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Default image inside panels */
+.panel img {
+    width: 80%;
+    height: 60%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.panel.active {
+    flex: 3;
+}
+
+/* Zoom in effect on active image */
+.panel.active img {
+    transform: scale(1.2);
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+/* Section Styles */
+section {
+    max-width: 80%;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+section p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+section p.intro {
+    text-align: left;
+    
+}
+
+/* Figure (Image and Caption) */
+figure img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    color: gray;
+}
+
+/* Sidebar (Aside) */
+aside {
+    max-width: 30%;
+    /* max-height: 30%; */
+    padding: 10px;
+    background: #ddd;
+    border-radius: 10px;
+}
+
+aside section {
+    max-width: 100%;
+    align-content: center;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer section {
+    color: #000000;
+    max-width: 100%;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+/* print styles */
+@media print {
+    body, h1, article, footer {
+       color: rgb(0,0,0);
+       background: rgb(255,255,255);
+    }
+    body {
+       max-width: 100%;
+    }
+    nav {
+       display: none;
+    }
+ }
+ @page {
+    margin: 0.75in;
+ }

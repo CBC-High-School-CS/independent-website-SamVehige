@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
     <title>Photographs</title>
+    <!--
+        Photographs
+        Filename: photos.html
+        Author:   Samuel Vehige
+        Date:     02/28/2025
+    -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="styles.css">
@@ -18,25 +24,48 @@
             <p><a href="exterior.html">Exterior Modifications</a></p>
             <p><a href="interior.html">Interior Modifications</a></p>
             <p><a href="photos.html">Photographs</a></p>
+            <p><a href="https://www.google.com/maps/place/Sam's+Auto+Repair+and+Tire/@38.7276238,-90.2473302,694m/data=!3m2!1e3!4b1!4m6!3m5!1s0x87df4bec3985dee1:0xddcc0c99f2199583!8m2!3d38.7276238!4d-90.2447499!16s%2Fg%2F11pwf12x1b?entry=ttu&g_ep=EgoyMDI1MDIyNS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Directions</a></p>
         </nav>
     </div>
     <section class="courses">
         <article>
             <p>Check out our gallery of customer rides and shop highlights...</p>
             <figure>
-                <img src="Photos/customer_car_1.jpg" alt="Customer's modified Mustang" width="290" height="220">
+                <a href="#img1">
+                    <img src="Photos/Mustang_GT.jpeg" alt="Customer's modified Mustang" width="290" height="220">
+                </a>
                 <figcaption>James' Mustang GT with track-ready mods</figcaption>
             </figure>
+            <div id="img1" class="lightbox">
+                <a href="#"><img src="Photos/Mustang_GT.jpeg" alt="Supercharger full view"></a>
+            </div>
             <figure>
-                <img src="Photos/customer_car_2.jpg" alt="Classic Chevy restored by Sam's" width="290" height="220">
+                <a href="#img2">
+                    <img src="Photos/Classic_Chevy.avif" alt="Classic Chevy restored by Sam's" width="290" height="220">
+                </a>
                 <figcaption>Classic Chevy restoration project</figcaption>
             </figure>
+            <div id="img2" class="lightbox">
+                <a href="#"><img src="Photos/Classic_Chevy.avif" alt="Supercharger full view"></a>
+            </div>
             <figure>
-                <img src="Photos/shop_event.jpg" alt="Shop event photo with customers and cars" width="290" height="220">
+                <a href="#img3">
+                    <img src="Photos/cars_coffee.avif" alt="Shop event photo with customers and cars" width="290" height="220">
+                </a>
                 <figcaption>Cars & Coffee event at Sam's</figcaption>
             </figure>
+            <div id="img3" class="lightbox">
+                <a href="#"><img src="Photos/cars_coffee.avif" alt="Supercharger full view"></a>
+            </div>
         </article>
     </section>
+    <aside>
+        <section class="featured-promo">
+            <a id="promo-link" href="https://www.knfilters.com" target="_blank">
+                <img id="promo-img" src="Photos/K&N_Add_1.jpg" alt="Promo Image" style="width: 100%; height: auto; max-height: 400px;">
+            </a>
+        </section>
+    </aside>    
     <footer>
         8949 Jennings Station Rd. • Jennings, MO 63136 • (314)875-9087 • samsautobody@performance.com
     </footer>
